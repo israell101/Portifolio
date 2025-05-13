@@ -1,6 +1,3 @@
-@media screen and (max-width: 390px) {
-}
-
 @media screen and (max-width: 600px) {
   .sobre-text {
     width: 100%;
@@ -18,10 +15,6 @@
     height: 30vh;
   }
 
-  .page-form-text form textarea {
-    width: 20rem;
-  }
-
   .nav-menu {
     display: flex;
     justify-content: space-around;
@@ -31,10 +24,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  .caixas-tech .caixa {
-    height: 18vh;
-  }
-
   .contato {
     width: auto;
   }
@@ -45,29 +34,6 @@
 
   .caixa-projeto img {
     height: 17vh;
-  }
-
-  
-
-  .caixa-projeto h3 {
-    padding-top: 50px;
-  }
-
-  .page-projetos {
-    width: 100%;
-  }
-
-  .page-form-text form {
-    width: 22rem;
-    height: 55vh;
-  }
-
-  .page-form-text form .p1 input {
-    width: 20rem;
-  }
-
-  .corpo-projeto {
-    height: 13vh;
   }
 }
 

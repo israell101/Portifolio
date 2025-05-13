@@ -52,7 +52,7 @@ body {
 }
 
 .hearder-nav {
-  background-color: #101635;
+  background-color: #1F293C;
   padding: 20px 0;
   position: sticky;
   top: 0;
@@ -360,6 +360,10 @@ body {
   border-radius: 10px;
   border-bottom: 4px solid #9a8112;
   transition: ease-in 0.1s;
+}
+
+.caixa img{
+  width: 50%;
 }
 
 .caixas-tech .caixa:hover {
