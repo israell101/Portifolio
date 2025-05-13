@@ -431,7 +431,6 @@ body {
 
 .card-div-projeto {
   width: 20rem;
-  height: 30rem;
   background-color: #e0ddd6;
   display: flex;
   flex-direction: column;
@@ -497,6 +496,7 @@ body {
   gap: 10px;
   bottom: 10px;
   display: flex;
+  
 }
 
 .botao-tech a {
@@ -563,6 +563,37 @@ body {
 
 .tech-projeto #react {
   background-color: #61dafb;
+}
+
+.filtro{
+  width: 71%;
+  justify-content: flex-start;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 2rem 0;
+}
+
+.filtro-projeto{
+  border: 1px solid #fff;
+  padding: 1rem 0rem;
+  width: 16rem;
+  display: flex;
+  border-radius: 1rem;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-filtro{
+  display: flex;
+  align-items: center;
+  padding: 0.1rem 0;
+  border: none;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
 
 /* -------------CONTATO-------------------- */
