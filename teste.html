@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Profissional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos personalizados */
+        .hero-bg {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .project-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        .softskill-item:hover {
+            background-color: #f8fafc;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Banner Hero -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold text-indigo-600">SeuNome</a>
+                </div>
+                
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#sobre" class="text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">Sobre Mim</a>
+                    <a href="#tecnologias" class="text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">Tecnologias</a>
+                    <a href="#projetos" class="text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">Projetos</a>
+                    <a href="#softskills" class="text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">Soft Skills</a>
+                    <a href="#contato" class="bg-indigo-600 text-white px-4 py-2 rounded-md font-medium hover:bg-indigo-700 transition duration-300">Contato</a>
+                </div>
+                
+                <!-- Botão Mobile -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#sobre" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 font-medium">Sobre Mim</a>
+                <a href="#tecnologias" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 font-medium">Tecnologias</a>
+                <a href="#projetos" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 font-medium">Projetos</a>
+                <a href="#softskills" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 font-medium">Soft Skills</a>
+                <a href="#contato" class="block px-3 py-2 text-indigo-600 font-medium">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- O resto do seu código permanece igual... -->
+    <!-- Banner Hero -->
+    <header class="hero-bg text-white py-20 px-4 sm:px-6 lg:px-8 mt-16 md:mt-0">
+        <!-- ... conteúdo do banner ... -->
+    </header>
+
+    <header class="hero-bg text-white py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Seu Nome</h1>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8">Sua Função/Profissão</h2>
+            
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="hover:text-gray-200 transition duration-300">
+                    <i class="fab fa-whatsapp text-3xl"></i>
+                </a>
+                <a href="#" class="hover:text-gray-200 transition duration-300">
+                    <i class="fab fa-linkedin text-3xl"></i>
+                </a>
+                <a href="#" class="hover:text-gray-200 transition duration-300">
+                    <i class="fab fa-github text-3xl"></i>
+                </a>
+            </div>
+            
+            <div class="mt-12">
+                <a href="#contato" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 inline-block">
+                    Entre em Contato
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Sobre Mim</h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/3 flex justify-center">
+                    <img src="https://via.placeholder.com/300" alt="Minha Foto" class="rounded-full w-48 h-48 object-cover border-4 border-indigo-100 shadow-lg">
+                </div>
+                
+                <div class="md:w-2/3">
+                    <p class="text-lg mb-4">
+                        Olá! Meu nome é [Seu Nome] e sou um(a) [Sua Profissão] apaixonado(a) por [área de atuação]. 
+                        Com [X] anos de experiência no mercado, tenho trabalhado em diversos projetos desafiadores 
+                        que me permitiram desenvolver habilidades técnicas e interpessoais.
+                    </p>
+                    <p class="text-lg">
+                        Minha abordagem combina [característica 1] com [característica 2], sempre buscando entregar 
+                        soluções inovadoras e de alta qualidade. Quando não estou trabalhando, gosto de [hobby/interesse].
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologias -->
+    <section id="tecnologias" class="py-16 bg-gray-100 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Tecnologias que Domino</h2>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <!-- Exemplo de cards de tecnologias -->
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <i class="fab fa-html5 text-5xl text-orange-500 mb-3"></i>
+                    <h3 class="font-semibold">HTML5</h3>
+                </div>
+                
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <i class="fab fa-css3-alt text-5xl text-blue-500 mb-3"></i>
+                    <h3 class="font-semibold">CSS3</h3>
+                </div>
+                
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <i class="fab fa-js text-5xl text-yellow-500 mb-3"></i>
+                    <h3 class="font-semibold">JavaScript</h3>
+                </div>
+                
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <i class="fab fa-react text-5xl text-blue-400 mb-3"></i>
+                    <h3 class="font-semibold">React</h3>
+                </div>
+                
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <i class="fab fa-node-js text-5xl text-green-600 mb-3"></i>
+                    <h3 class="font-semibold">Node.js</h3>
+                </div>
+                
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <i class="fas fa-database text-5xl text-blue-600 mb-3"></i>
+                    <h3 class="font-semibold">SQL</h3>
+                </div>
+                
+                <!-- Adicione mais tecnologias conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Meus Projetos</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projeto 1 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://via.placeholder.com/600x400" alt="Projeto 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Nome do Projeto 1</h3>
+                        <p class="text-gray-600 mb-4">Descrição breve do projeto e suas funcionalidades principais.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">React</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Node.js</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">MongoDB</span>
+                        </div>
+                        <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 transition duration-300">
+                            Ver Projeto <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Projeto 2 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://via.placeholder.com/600x400" alt="Projeto 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Nome do Projeto 2</h3>
+                        <p class="text-gray-600 mb-4">Descrição breve do projeto e suas funcionalidades principais.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Vue.js</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Firebase</span>
+                        </div>
+                        <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 transition duration-300">
+                            Ver Projeto <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Projeto 3 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://via.placeholder.com/600x400" alt="Projeto 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Nome do Projeto 3</h3>
+                        <p class="text-gray-600 mb-4">Descrição breve do projeto e suas funcionalidades principais.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Python</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Django</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">PostgreSQL</span>
+                        </div>
+                        <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 transition duration-300">
+                            Ver Projeto <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition duration-300">
+                    Ver Todos os Projetos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soft Skills -->
+    <section id="softskills" class="py-16 bg-gray-100 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Minhas Soft Skills</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="softskill-item bg-white p-6 rounded-lg shadow-sm transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-users text-indigo-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Trabalho em Equipe</h3>
+                    </div>
+                    <p class="text-gray-600">Capacidade de colaborar efetivamente com colegas, compartilhar conhecimentos e alcançar objetivos comuns.</p>
+                </div>
+                
+                <div class="softskill-item bg-white p-6 rounded-lg shadow-sm transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-lightbulb text-indigo-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Resolução de Problemas</h3>
+                    </div>
+                    <p class="text-gray-600">Habilidade para analisar desafios complexos e desenvolver soluções criativas e eficientes.</p>
+                </div>
+                
+                <div class="softskill-item bg-white p-6 rounded-lg shadow-sm transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-comments text-indigo-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Comunicação</h3>
+                    </div>
+                    <p class="text-gray-600">Capacidade de expressar ideias com clareza tanto verbalmente quanto por escrito, adaptando-se a diferentes públicos.</p>
+                </div>
+                
+                <div class="softskill-item bg-white p-6 rounded-lg shadow-sm transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-clock text-indigo-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Gestão de Tempo</h3>
+                    </div>
+                    <p class="text-gray-600">Habilidade para priorizar tarefas, cumprir prazos e manter a produtividade mesmo sob pressão.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Entre em Contato</h2>
+            
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nome</label>
+                        <input type="text" id="name" name="name" required 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-mail</label>
+                        <input type="email" id="email" name="email" required 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Assunto</label>
+                        <input type="text" id="subject" name="subject" 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensagem</label>
+                        <textarea id="message" name="message" rows="4" required 
+                                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                    </div>
+                    
+                    <div>
+                        <button type="submit" 
+                                class="w-full bg-indigo-600 text-white py-3 px-4 rounded-md hover:bg-indigo-700 transition duration-300 font-semibold">
+                            Enviar Mensagem
+                        </button>
+                    </div>
+                </form>
+                
+                <div id="formSuccess" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-md">
+                    Mensagem enviada com sucesso! Entrarei em contato em breve.
+                </div>
+                
+                <div id="formError" class="hidden mt-4 p-4 bg-red-100 text-red-700 rounded-md">
+                    Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <h3 class="text-xl font-semibold mb-4">Ou me encontre nas redes sociais</h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 transition duration-300">
+                        <i class="fab fa-whatsapp text-3xl"></i>
+                    </a>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 transition duration-300">
+                        <i class="fab fa-linkedin text-3xl"></i>
+                    </a>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 transition duration-300">
+                        <i class="fab fa-github text-3xl"></i>
+                    </a>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 transition duration-300">
+                        <i class="fab fa-twitter text-3xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Seu Nome</h2>
+                    <p class="text-gray-400 mt-2">Sua Função/Profissão</p>
+                </div>
+                
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-6 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                    
+                    <p class="text-gray-400 text-sm">
+                        &copy; <span id="currentYear"></span> Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+         // Atualiza o ano no footer
+         document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Simulação de envio do formulário
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simula o envio (substitua por código real de envio)
+            setTimeout(() => {
+                document.getElementById('formSuccess').classList.remove('hidden');
+                document.getElementById('formError').classList.add('hidden');
+                document.getElementById('contactForm').reset();
+                
+                // Esconde a mensagem de sucesso após 5 segundos
+                setTimeout(() => {
+                    document.getElementById('formSuccess').classList.add('hidden');
+                }, 5000);
+            }, 1000);
+        });
+        
+        // Suaviza a rolagem para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Fecha o menu mobile se estiver aberto
+                document.getElementById('mobile-menu').classList.remove('open');
+            });
+        });
+        
+        // Menu mobile
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('open');
+        });
+
+        // Atualiza o ano no footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Simulação de envio do formulário
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simula o envio (substitua por código real de envio)
+            setTimeout(() => {
+                document.getElementById('formSuccess').classList.remove('hidden');
+                document.getElementById('formError').classList.add('hidden');
+                document.getElementById('contactForm').reset();
+                
+                // Esconde a mensagem de sucesso após 5 segundos
+                setTimeout(() => {
+                    document.getElementById('formSuccess').classList.add('hidden');
+                }, 5000);
+            }, 1000);
+        });
+        
+        // Suaviza a rolagem para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
