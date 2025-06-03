@@ -276,6 +276,31 @@ body {
   transition-duration: 0.4s;
 }
 
+.link-curriculo{
+  background-color: #d3bd1a;
+  color: #fff;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+  transition: ease .2s;
+}
+
+.link-curriculo a{
+  text-decoration: none;
+  gap: 0.3rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.link-curriculo:hover{
+  background-color: #106da3; 
+}
+
+
 /* ---------------------- SOBRE MIM----------------------- */
 .page-sobre-mim {
   display: flex;
@@ -714,8 +739,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  gap: 2rem;
-  padding: 1rem;
   z-index: 1;
 }
 
@@ -779,16 +802,41 @@ body {
 }
 
 /* ===== Texto ao lado do formulário ===== */
+.h-contato{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .h-contato h3 {
   width: 24rem;
   font-size: 30px;
   margin-right: 30px;
-  margin-bottom: 100px; /* Reduzi o exagero aqui */
   color: #fff;
 }
 
 .h-contato span {
   color: #cdab13;
+}
+
+.classsection-contatos-info{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.classsection-contatos-info li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  gap: 0.5rem;
+  /* border: 2px solid #fff; */
+  padding: 0.5rem;
+  border-radius: 2rem;
+  width: 17rem;
 }
 
 footer {
@@ -806,6 +854,9 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+
 }
 
 .div-funcao{
@@ -818,7 +869,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: end;
-  gap: 1rem;
+  gap: 1.4rem;
 }
 
 .footer-icons{
@@ -835,7 +886,7 @@ footer {
 .footer-icons a:hover{
   color: #fff;
 }
-
+ 
 .div-funcao h3{
   color: #fff;
   font-size: 1.5rem;
