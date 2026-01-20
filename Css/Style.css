@@ -44,6 +44,7 @@ body {
   scroll-margin-top: 80px;
 }
 
+
 .hearder-nav .logo p {
   color: #fff;
   text-transform: uppercase;
@@ -699,7 +700,8 @@ body {
 
 /* ===== Seção Contato ===== */
 .contato{
-  background-image: url(../Img/contato.jpg);
+  /* background-image: url(../Img/contato.jpg); */
+  background-color: #14192c;
   background-size: cover;
   height: 80vh;
   display: flex;
@@ -710,9 +712,9 @@ body {
   position: relative;
 }
 
-.contato::before {
+/* .contato::before {
    content: "";
-   background-color: #1e2c64;
+   
    width: 100%;
    height: 100%;
    position: absolute;
@@ -722,7 +724,7 @@ body {
    left: 0;
    opacity: 0.5;
    position: absolute;
-}
+} */
 
 .contato h2 {
   font-size: 2.5rem;
@@ -730,6 +732,51 @@ body {
   border-bottom: 2px solid #d8d7d7;
   margin-top: 20px;
   z-index: 1;
+}
+
+/* ---------- CURSOS ---------- */
+
+main {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+main card {
+  background-color: #1e355a;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.info-cursos{
+  height: 7rem;
+}
+
+main .info-cursos{
+  color: #fff;
+}
+
+main card img {
+  width: 30%;
+}
+
+main .info-cursos{
+  padding-left: 1rem;
+}
+
+.lista-cursos{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.info-cursos h4{
+  margin-top: 1rem;
+  background-color: #298fca;
+  text-align: center;
+  border-radius: 1rem;
 }
 
 /* ===== Container do Formulário e Texto ===== */
@@ -747,97 +794,6 @@ body {
   padding-bottom: 80px;
 }
 
-/* ===== Formulário ===== */
-.page-form-text form {
-  width: 18rem;
-  padding: 2rem 0;
-  background-color: rgb(240, 240, 240);
-  box-sizing: border-box;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 12px;
-}
-
-.page-form-text form input {
-  width: 250px;
-  border-radius: 12px;
-  border: none;
-  padding: 0.75rem 0.5rem;
-  font-family: "Outfit", sans-serif;
-}
-
-.page-form-text form .p1 {
-  padding: 10px 20px;
-  color: #494343;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 18px;
-  display: flex;
-  gap: 8px;
-  font-size: 17px;
-}
-
-.page-form-text form textarea {
-  width: 15.5rem;
-  height: 100px;
-  padding: 10px;
-  border-radius: 12px;
-  border: none;
-  font-family: "Outfit", sans-serif;
-  resize: none;
-}
-
-.page-form-text form button {
-  width: 6rem;
-  padding: 0.6rem 0;
-  border-radius: 12px;
-  border: none;
-  background-color: #cdab13;
-  color: #fff;
-  font-weight: 600;
-  font-size: 0.80rem;
-}
-
-/* ===== Texto ao lado do formulário ===== */
-.h-contato{
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.h-contato h3 {
-  width: 24rem;
-  font-size: 30px;
-  margin-right: 30px;
-  color: #fff;
-}
-
-.h-contato span {
-  color: #cdab13;
-}
-
-.classsection-contatos-info{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.classsection-contatos-info li{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: #fff;
-  font-size: 1.15rem;
-  font-weight: 600;
-  gap: 0.5rem;
-  /* border: 2px solid #fff; */
-  padding: 0.5rem;
-  border-radius: 2rem;
-  width: 17rem;
-}
 
 footer {
   width: 100%;
